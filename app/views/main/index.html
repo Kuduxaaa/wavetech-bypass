@@ -1,0 +1,19 @@
+{% extends 'layouts/base.html' %}
+
+{% block body %}
+    
+    <div class="wrapper">
+        <div class="forms">
+            <form action="" id="form" method="post">
+                <textarea id="text" class="form-control" data-geokb="true" cols="30" rows="10" class="form" placeholder="Enter text to speech 🥰"></textarea>
+                <button type="submit" class="btn">Speak</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block javascript %}
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/geokb.js') }}"></script>
+{% endblock %}
